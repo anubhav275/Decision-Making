@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int age, voter_id;
+    cout<< "Enter your age: ";
+    cin>>age;
+    cout<< "Enter your Voter ID: ";
+    cin>>voter_id;
+
+    if( age >= 18 && voter_id < 100)
+    {
+        cout<< " You are eligible for voting & and your nearest voting centre is in A-ZONE "<<endl;
+    }
+    else if(age >= 18 && voter_id >= 100)
+    {
+        cout<< " You are eligible for voting & and your nearest voting centre is in B-ZONE "<<endl;
+    }
+    else
+    {
+        cout<< " You are not eligible for voting "<<endl;
+    }
+    return 0;
+}
